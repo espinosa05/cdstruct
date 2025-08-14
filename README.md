@@ -27,14 +27,14 @@ open cdstruct.c and do this:
 CSTRUCT_DECL(yourConstructorFunction);
 
 /* add it to the cstruct array */
-CStructFunctions cstructs[] = {
+CStructFunc cstructs[] = {
     CSTRUCT_ENTRY(yourConstructorFunction),
 };
 
 /* same for destructors */
 DSTRUCT_DECL(yourDestructorFunction);
 
-DStructFunctions dstructs[] = {
+DStructFunc dstructs[] = {
     DSTRUCT_ENTRY(yourDestructorFunction),
 };
 ```
