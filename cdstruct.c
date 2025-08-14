@@ -1,8 +1,8 @@
 
 /* symbols for Grep */
 #define CDSTRUCT_ARRAY_SIZE(a) sizeof(a)/sizeof(*a)
-#define DECL_CSTRUCT(p) void p ()
-#define DECL_DSTRUCT(p) void p ()
+#define CSTRUCT_DECL(p) void p ()
+#define DSTRUCT_DECL(p) void p ()
 #define CSTRUCT_ENTRY(e)   e
 #define DSTRUCT_ENTRY(e)   e
 #define CSTRUCT()           \
@@ -23,9 +23,9 @@ typedef void (*DStructFunc)(void);
 
 
 /* add your constructor function symbols here */
-DECL_CSTRUCT_PROTOTYPE(DummyConstructor);
+CSTRUCT_DECL(DummyConstructor);
 /* add your destructor function symbols here */
-DECL_DSTRUCT_PROTOTYPE(DummyDestructor);
+DSTRUCT_DECL(DummyDestructor);
 
 /* add your constructors to the list */
 CStructFunc cstruct[] = {
